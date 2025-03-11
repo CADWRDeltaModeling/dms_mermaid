@@ -1,0 +1,12 @@
+name: dms_mermaid
+channels:
+  - cadwr-dms
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - pyproj
+  - mermaid
+
+# For VSCode you'll want to install extension: Markdown Preview Mermaid Support by Matt Bierner

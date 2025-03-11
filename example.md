@@ -119,7 +119,6 @@ gantt
 
 ``` mermaid
 pie 
-    showData
     title PetterTech's content
     "Windows 365" : 13
     "Azure" : 28
