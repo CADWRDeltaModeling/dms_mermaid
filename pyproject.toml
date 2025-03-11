@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dms_mermaid"
+version = "0.1.0"
+description = "A Python project for generating and managing Mermaid charts for Delta Modeling Section"
+authors = ["Lily Tomkovic <lily.tomkovic@water.ca.gov>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mermaid-js = "^10.5.0"  # Example version if using Mermaid CLI via Node.js
+pymermaid = "^0.1.2"  # Hypothetical Python wrapper for Mermaid
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+black = "^23.0"
+pre-commit = "^3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
