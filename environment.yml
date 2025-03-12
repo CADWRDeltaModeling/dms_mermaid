@@ -7,6 +7,22 @@ dependencies:
   - python=3.11
   - pip
   - pyproj
-  - mermaid
+  - nodejs
+  - sphinx
+  - sphinx_rtd_theme
+  - sphinx
+  - sphinx-design
+  - sphinx-argparse  
+  - sphinxcontrib-bibtex
+  - sphinxcontrib-mermaid
+  - sphinx_rtd_theme
+  - nbsphinx
+  - pillow>=4.0.0
 
 # For VSCode you'll want to install extension: Markdown Preview Mermaid Support by Matt Bierner
+# npm config set registry http://registry.npmjs.org/
+# npm config set strict-ssl false
+# npm install -g @mermaid-js/mermaid-cli
+
+# use like: mmdc -i input.mmd -o output.svg
+# see documentation: https://github.com/mermaid-js/mermaid-cli

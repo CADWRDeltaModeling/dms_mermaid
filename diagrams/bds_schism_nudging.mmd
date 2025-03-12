@@ -1,0 +1,29 @@
+---
+config:
+  look: classic
+  theme: redux
+  layout: default
+---
+flowchart LR
+      
+    hgrid["<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from HeroIcons v1 Outline by Refactoring UI Inc - https://github.com/tailwindlabs/heroicons/blob/master/LICENSE --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg> Horizontal Grid:<br>hgrid.gr3"] --> nudge_py["Run: nudging.py"]
+
+    style baroclinic fill:#BBDEFB, color:#000000
+    vgrid3["Vertical Grid:
+            vgrid.in.3d"] --> nudge_py
+    nudge(["Start: nudging input"]) --> nudge_ts["Nudging time series 
+                        in .csv"]
+    nudge_ts --> nudge_py
+    nudge_py --> nudge_nc["{MOD}_nu.nc & {MOD_nudge.gr3}"]
+    hycom_input["hycom_input"] --> nudge_py
+    nudge_nc --> baroclinic{"Baroclinic Simulation"}
+    style baroclinic fill:#BBDEFB, color:#000000
+
+    hgrid@{ shape: doc}
+    vgrid3@{ shape: doc}
+    nudge_ts@{ shape: docs}
+    nudge_nc@{ shape: docs}
+
+    click hgrid "https://cadwrdeltamodeling.github.io/BayDeltaSCHISM/topics/mesh.html#"
+
+%% dms_mermaid\diagrams> mmdc -i .\bds_schism_nudging.mmd -o ../docsrc/svg/nudging_flowchart.svg
