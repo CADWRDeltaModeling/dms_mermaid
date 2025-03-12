@@ -10,3 +10,10 @@ Nudging
 
 .. raw:: html 
     :file: ./svg/nudging_flowchart.svg
+
+    
+Bay Delta SCHISM General Map
+--------------------------------
+
+.. raw:: html 
+    :file: ./svg/bdschism_general.svg
