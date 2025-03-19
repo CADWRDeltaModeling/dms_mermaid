@@ -8,7 +8,9 @@ To generate sleek mermaid charts that are clickable and well-formatted, use this
 2. Download the mermaid cli SVG generator
 
     > npm config set registry http://registry.npmjs.org/
+    
     > npm config set strict-ssl false
+    
     > npm install -g @mermaid-js/mermaid-cli
 
 3. Create your mermaid diagrams and save as .mmd
