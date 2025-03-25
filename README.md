@@ -31,3 +31,4 @@ You can also use a VS Code extension but it only works if your file is *.mmd and
 > \`\`\`
 
 Around the diagram code.
+The extension we're using is Markdown Preview Mermaid Support by Matt Bierner
