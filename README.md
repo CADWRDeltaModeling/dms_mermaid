@@ -22,13 +22,5 @@ To generate sleek mermaid charts that are clickable and well-formatted, use this
 There is an [example.md](diagrams/example.md) from [PetterTech](https://github.com/PetterTech/DemoStuff/blob/main/Mermaid/mermaid.md)
 There are also examples of how to just include a mermaid diagram in your readme.md [here](https://gist.github.com/ChristopherA/bffddfdf7b1502215e44cec9fb766dfd)
 
-You can also use a VS Code extension but it only works if your file is *.mmd and has the code block:
 
-> \`\`\`mermaid
-> 
-> diagram code
-> 
-> \`\`\`
-
-Around the diagram code.
-The extension we're using is Markdown Preview Mermaid Support by Matt Bierner
+<img src="icons/mermaid_chart.png" alt="Mermaid Chart Icon" width="50"> You can also use the [Mermaid Chart VS Code extension](https://marketplace.visualstudio.com/items?itemName=MermaidChart.vscode-mermaid-chart) but it only works if your file is *.mmd 

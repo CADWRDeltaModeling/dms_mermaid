@@ -1,5 +1,6 @@
 # Mermaid examples
-To render these in VS Code, you need to install an extension for Mermaid. I use [this one](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid).
+To render these in VS Code, you need to install a specific extension for Mermaid [this one](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid).
+Otherwise you can see this in GitHub at https://github.com/CADWRDeltaModeling/dms_mermaid/blob/main/diagrams/example.md
 
 Some of these examples do not render properly in GitHub but they do in VS Code with the extension installed.
 

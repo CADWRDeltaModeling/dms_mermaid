@@ -3,3 +3,6 @@ docs/*
 
 # vs code stuff
 settings.json
+
+# python stuff
+*.pyc

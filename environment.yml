@@ -19,7 +19,8 @@ dependencies:
   - nbsphinx
   - pillow>=4.0.0
 
-# For VSCode you'll want to install extension: Markdown Preview Mermaid Support by Matt Bierner
+# For VSCode you'll want to install extension: Markdown Chart by markdownchart.com
+
 # npm config set registry http://registry.npmjs.org/
 # npm config set strict-ssl false
 # npm install -g @mermaid-js/mermaid-cli
