@@ -16,21 +16,23 @@ config:
         }
     }
 }%%
+
 flowchart TD
     
     %% Gridding -------------------------------------------------------------------------
-    subgraph mesh [<svg width="32" height="32" viewBox="0 0 24 24"><path fill="#FFFFFFF" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Gridding]
+    subgraph mesh [<span style='display: inline-flex; align-items: center; color:white'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg?color=white' width='20' height='20' style='margin-right: 4px;' /> Gridding</span>]
     end
-    style mesh fill:#8a5c6f, stroke:#1a0f13, color:#FFFFFF
+    %% Style
+    style mesh fill:#75590d, stroke:#1a0f13, color:#FFFFFF
     click mesh "https://cadwrdeltamodeling.github.io/BayDeltaSCHISM/topics/mesh.html" _blank
-    
+
     %% Time Series Inputs -------------------------------------------------------------------------
     subgraph bd [Time Series Inputs]
-        time_ins(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Inflow Boundaries)
-        ocean_in(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Ocean Boundary)
-        atmos_in(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Atmospheric Forcings)
+        time_ins(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' /> Inflow Boundaries</span>)
+        ocean_in(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' style='margin-right: 4px;' /> Ocean Boundary</span>)
+        atmos_in(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' style='margin-right: 4px;' /> Atmospheric Forcings</span>)
     end
-    %% Stlye
+    %% Style
     style bd fill:#c8bce0, stroke:#3e3254, color:#FFFFFF
     style time_ins fill:#e9e1f7, stroke:None
     style ocean_in fill:#e9e1f7, stroke:None
@@ -41,11 +43,11 @@ flowchart TD
 
     %% Spatial Inputs -------------------------------------------------------------------------
     subgraph si [Spatial Inputs]
-        nudge(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Nudging)
-        hotstart(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Hotstart)
-        veg(<svg width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke=#000000 stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225l.569-9.47l5.227 7.917l-3.286-.672ZM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>Vegetation)
+        nudge(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' /> Nudging</span>)
+        hotstart(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' style='margin-right: 4px;' /> Hotstart</span>)
+        veg(<span style='display: inline-flex; align-items: center;'><img src='https://api.iconify.design/mdi:cursor-default-click-outline.svg' width='20' height='20' style='margin-right: 4px;' /> Vegetation</span>)
     end
-    %% Stlye
+    %% Style
     style si fill:#e3cbb1, stroke:#473a2c, color:#FFFFFF
     style nudge fill:#f2e7da, stroke:None
     style hotstart fill:#f2e7da, stroke:None
@@ -55,6 +57,7 @@ flowchart TD
     click veg "https://cadwrdeltamodeling.github.io/BayDeltaSCHISM/topics/vegetation.html" _blank
 
 
+    %% SCHISM -------------------------------------------------------------------------
     schism{SCHISM Simulation}
     style schism fill:#7fa6b3, stroke:None, color:#FFFFFF
 
