@@ -21,6 +21,9 @@ Bay Delta SCHISM General Map
 Nicky
 --------------------------------
 
+.. raw:: html 
+    :file: ./svg/bdschism_general.svg
+    
 Eli
 --------------------------------
 
