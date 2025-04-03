@@ -1,1 +1,0 @@
-icons downloaded as svg from https://icones.js.org/

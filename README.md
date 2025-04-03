@@ -23,4 +23,4 @@ There is an [example.md](diagrams/example.md) from [PetterTech](https://github.c
 There are also examples of how to just include a mermaid diagram in your readme.md [here](https://gist.github.com/ChristopherA/bffddfdf7b1502215e44cec9fb766dfd)
 
 
-<img src="icons/mermaid_chart.png" alt="Mermaid Chart Icon" width="50"> You can also use the [Mermaid Chart VS Code extension](https://marketplace.visualstudio.com/items?itemName=MermaidChart.vscode-mermaid-chart) but it only works if your file is *.mmd 
+<img src="docsrc/img/mermaid_chart.png" alt="Mermaid Chart Icon" width="50"> You can also use the [Mermaid Chart VS Code extension](https://marketplace.visualstudio.com/items?itemName=MermaidChart.vscode-mermaid-chart) but it only works if your file is *.mmd 
