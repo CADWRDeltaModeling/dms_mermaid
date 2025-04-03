@@ -1,5 +1,23 @@
-``` mermaid
-%% New flowchart for atmospheric simulation
+---
+config:
+  look: classic
+  theme: redux
+  layout: default
+---
+%%{
+    init: {
+        'theme': 'base',
+        'themeVariables': {
+        'primaryColor': '#fff',
+        'primaryTextColor': '#000',
+        'primaryBorderColor': '#002570',
+        'lineColor': '#000',
+        'secondaryColor': '#d1d1d1',
+        'tertiaryColor': '#fff'
+        }
+    }
+}%%
+
 flowchart TD
 
     %% Define processes -----------------------
@@ -141,5 +159,3 @@ flowchart TD
         %% hotstart combine -----------------------
         hotstart -- starting from previous run? --> hotstart_combine_data --> combine_hotstart7 --> raw_hotstart --> baroclinic
     end
-
-```
