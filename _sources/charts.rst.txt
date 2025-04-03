@@ -21,17 +21,11 @@ Bay Delta SCHISM General Map
 Nicky
 --------------------------------
 
-.. raw:: html 
-    :file: ./svg/bdschism_general.svg
-    
 Eli
 --------------------------------
 
 Kijin
 --------------------------------
-
-.. raw:: html 
-    :file: ./svg/nudging_flowchart.svg
 
 Zhenlin
 --------------------------------
