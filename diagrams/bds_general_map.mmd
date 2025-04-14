@@ -25,6 +25,12 @@ flowchart TD
     %% Style
     style mesh fill:#75590d, stroke:#1a0f13, color:#FFFFFF
     click mesh "https://cadwrdeltamodeling.github.io/BayDeltaSCHISM/topics/mesh.html" _blank
+	
+    %% Collect Data
+    subgraph collect [Collect Data]
+    end
+    style collect fill:#8a5c6f, stroke:#1a0f13, color:#FFFFFF
+    collect --> bd
 
     %% Time Series Inputs -------------------------------------------------------------------------
     subgraph bd [Time Series Inputs]
