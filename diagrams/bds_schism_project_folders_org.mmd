@@ -1,0 +1,43 @@
+---
+config:
+  look: classic
+  theme: base
+---
+%%{
+    init: {
+        'theme': 'base',
+        'themeVariables': {
+        'primaryColor': '#fff',
+        'primaryTextColor': '#000',
+        'primaryBorderColor': '#002570',
+        'lineColor': '#000',
+        'secondaryColor': '#d1d1d1',
+        'tertiaryColor': '#fff'
+        }
+    }
+}%%
+
+flowchart TD
+
+    subgraph project [<span style='display: inline-flex; align-items: center; color:black'><img src='https://api.iconify.design/material-symbols:folder-open-outline.svg' width='20' height='20' style='margin-right: 4px;' /> Project</span>]
+        subgraph data [<span style='display: inline-flex; align-items: center; color:black'><img src='https://api.iconify.design/material-symbols:folder-open-outline.svg' width='20' height='20' style='margin-right: 4px;' /> data</span>]
+            subgraph atmos
+                narr[NARR]
+                sflux[baydelta_sflux]
+            end
+        end
+        subgraph preprocess [<span style='display: inline-flex; align-items: center; color:black'><img src='https://api.iconify.design/material-symbols:folder-open-outline.svg' width='20' height='20' style='margin-right: 4px;' /> preprocess</span>]
+        end
+        subgraph simulations [<span style='display: inline-flex; align-items: center; color:black'><img src='https://api.iconify.design/material-symbols:folder-open-outline.svg' width='20' height='20' style='margin-right: 4px;' /> simulations</span>]
+            2016_noaction[2016_noaction]
+        end
+        subgraph postprocess [<span style='display: inline-flex; align-items: center; color:black'><img src='https://api.iconify.design/material-symbols:folder-open-outline.svg' width='20' height='20' style='margin-right: 4px;' /> postprocess</span>]
+        end
+    end
+
+    %% Links
+    data ~~~ preprocess ~~~ simulations ~~~ postprocess
+    narr ~~~ sflux
+
+    %% Styles
+    style project fill:#c7ede7, stroke:#1a0f13, color:#FFFFFF
