@@ -1,0 +1,40 @@
+---
+config:
+  look: classic
+  theme: base
+---
+%%{
+    init: {
+        'theme': 'base',
+        'themeVariables': {
+        'primaryColor': '#fff',
+        'primaryTextColor': '#000',
+        'primaryBorderColor': '#000',
+        'lineColor': '#000',
+        'secondaryColor': '#d1d1d1',
+        'tertiaryColor': '#fff'
+        }
+    }
+}%%
+
+flowchart LR
+    
+
+    yaml@{ shape: doc, label: "yaml file"}
+    csv@{ shape: doc, label: "csv file"}
+    
+    port_bc(["port_boundary.py"])
+
+    yaml --> port_bc
+    csv --> port_bc
+
+    port_bc --> sch_out@{ shape: docs, label: "SCHISM *.th input files"}
+
+    %% click hgrid "https://cadwrdeltamodeling.github.io/BayDeltaSCHISM/topics/mesh.html#"
+
+    style yaml fill:#104862, color:#FFFFFF
+    style csv fill:#78206E, color:#FFFFFF
+    style port_bc fill:#cccccc
+
+%% dms_mermaid\diagrams> mmdc -i .\port_boundary.mmd -o ../docsrc/svg/port_boundary.svg
+%% dms_mermaid\diagrams> mmdc -i .\port_boundary.mmd -o ../docsrc/img/port_boundary.png -b transparent
